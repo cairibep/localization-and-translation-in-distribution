@@ -4,11 +4,9 @@ import locale
 from datetime import datetime
 from babel.dates import format_datetime
 
-# --- Instala sistema de tradução ---
 locale.setlocale(locale.LC_ALL, '')
 language, _ = locale.getlocale()
 
-# Define domínio e diretório de tradução
 translation = gettext.translation(
     domain='dev_aberto',
     localedir='dev_aberto/locale',
@@ -26,7 +24,7 @@ def hello():
     date = commit_info['date']
     name = commit_info['name']
 
-    # Formata a data conforme o idioma atual
+
     dt = datetime.fromisoformat(date.replace('Z', '+00:00'))
     formatted_date = format_datetime(dt, format='full', locale=language or 'en_US')
 
