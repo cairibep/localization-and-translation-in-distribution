@@ -4,6 +4,21 @@
 .
 ├── build
 │   ├── bdist.win-amd64
+│   ├── hello
+│   │   ├── Analysis-00.toc
+│   │   ├── base_library.zip
+│   │   ├── EXE-00.toc
+│   │   ├── hello.pkg
+│   │   ├── localpycs
+│   │   │   ├── pyimod01_archive.pyc
+│   │   │   ├── pyimod02_importers.pyc
+│   │   │   ├── pyimod03_ctypes.pyc
+│   │   │   └── struct.pyc
+│   │   ├── PKG-00.toc
+│   │   ├── PYZ-00.pyz
+│   │   ├── PYZ-00.toc
+│   │   ├── warn-hello.txt
+│   │   └── xref-hello.html
 │   └── lib
 │       └── dev_aberto
 │           ├── dev_aberto.py
@@ -34,7 +49,9 @@
 │   ├── SOURCES.txt
 │   └── top_level.txt
 ├── dist
-│   └── dev_aberto_caiorp-0.1.tar.gz
+│   ├── dev_aberto_caiorp-0.1.tar.gz
+│   └── hello
+├── hello.spec
 ├── libs.txt
 ├── LICENSE
 ├── README.md
